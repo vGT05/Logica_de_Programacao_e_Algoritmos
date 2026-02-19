@@ -7,4 +7,4 @@ System.Console.WriteLine(5*3);//Multiplicação
 System.Console.WriteLine(3/2);//Divisão
 WriteLine(7%3);//Resto da divisão
 WriteLine(2*2*2);//Potenciação
-WriteLine(2+2/2);
+WriteLine((2+2) / (2+2));//Ordens da operação
