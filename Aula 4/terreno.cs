@@ -3,7 +3,6 @@ using static System.Console;
 
 double comp, larg, area, preco;
 
-
 System.Console.WriteLine("Digite o comprimento do terreno: ");//entrada de dados
 comp = double.Parse(ReadLine());
 
