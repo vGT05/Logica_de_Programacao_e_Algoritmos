@@ -12,6 +12,3 @@ days = (entryDays%365)/12;
 WriteLine($"Anos: {years}");
 WriteLine($"Meses: {months}");
 WriteLine($"Dias: {days}");
-
-
-
