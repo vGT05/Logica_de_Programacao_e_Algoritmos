@@ -11,5 +11,11 @@ money = double.Parse(ReadLine());
 
 total = price*quant;
 
-WriteLine($"(O valor a ser devolvido é de: R${money-total})");
+WriteLine($"(O valor a ser devolvido é de: R${money-total}) :3");
+
+
+
+
+
+
 
