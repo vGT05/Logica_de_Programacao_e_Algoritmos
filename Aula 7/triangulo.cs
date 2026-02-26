@@ -10,19 +10,7 @@ b = int.Parse(ReadLine());
 Write("Digite o terceiro valor: ");
 c = int.Parse(ReadLine());
 
-if ((a+b) < c)
-{
-    areaTrap = ((a+b)*c)/2;
-    WriteLine("Não foi possível formar um triângulo.");
-    WriteLine($"A área do trapézio é {areaTrap}");
-}
-else if ((a+c) < b)
-{
-    areaTrap = ((a+b)*c)/2;
-    WriteLine("Não foi possível formar um triângulo.");
-    WriteLine($"A área do trapézio é {areaTrap}");
-}
-else if ((c+b) < a)
+if ((a+b) < c | (a+c) < b | (c+b) < a)
 {
     areaTrap = ((a+b)*c)/2;
     WriteLine("Não foi possível formar um triângulo.");
@@ -32,5 +20,5 @@ else
 {
     p = (a + b + c) / 2;
     areaTri = Math.Sqrt(p*(p-a)*(p-b)*(p-c));
-    WriteLine($"A área do triângulo é de {areaTri:F}");
+    WriteLine($"A área do triângulo é de {areaTri:F2}");
 }
