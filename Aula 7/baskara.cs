@@ -11,7 +11,7 @@ Write("Digite o valor de C: ");
 c = double.Parse(ReadLine());
 //processamento de dados
 delta = (b*b) - (4*a*c);
-//controle de decição e saída de dados
+//controle de decisão e saída de dados
 if (delta < 0)
 {
     WriteLine("Raízes impossíveis");
