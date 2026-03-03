@@ -1,6 +1,7 @@
 using static System.Console;
 
-int altMin, altMax, vis, alt, total = 0;
+int altMin, altMax, vis, alt, totalpos = 0, totalneg = 0;
+//Eu queria usar o static void aqui, mas não consegui fazer funcionar nem a pau
 try{
 Write("Digite a altura mínima: ");
 altMin = int.Parse(ReadLine());
@@ -13,19 +14,18 @@ for (int i = 0; i < vis; i++)
 {
     Write($"Digite a altura da pessoa número {i+1}: ");
     alt = int.Parse(ReadLine());
-    total++;
+
     if (alt <= altMax & alt >= altMin)
     {
-        WriteLine($"{total} pessas estão entre {altMin} e {altMax}");
+        totalpos++;
     }
     else
     {
-        WriteLine($"{total} não possuem altura permitida");
+        totalneg++;
     }
-
-
 }
 
+WriteLine($"{totalpos} pessoas estão entre {altMin} e {altMax}, e {totalneg} não possuem a altura necessária.");
 
 }
 catch (Exception ex)
