@@ -30,5 +30,5 @@ WriteLine($"{totalpos} pessoas estão entre {altMin} e {altMax}, e {totalneg} n�
 }
 catch (Exception ex)
 {
-    WriteLine("Digite um valor válido.", ex.Message);
+    WriteLine("ERRO: o valor digitado não é válido.", ex.Message);
 }
