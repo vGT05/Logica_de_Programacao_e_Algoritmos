@@ -3,12 +3,12 @@ using static System.Console;
 int altMin, altMax, vis, alt, totalpos = 0, totalneg = 0;
 //Eu queria usar o static void aqui, mas não consegui fazer funcionar nem a pau
 try{
+Write("Digite o número de visitantes: ");
+vis = int.Parse(ReadLine());
 Write("Digite a altura mínima: ");
 altMin = int.Parse(ReadLine());
 Write("Digite a altura máxima: ");
 altMax = int.Parse(ReadLine());
-Write("Digite o número de visitantes: ");
-vis = int.Parse(ReadLine());
 
 for (int i = 0; i < vis; i++)
 {
